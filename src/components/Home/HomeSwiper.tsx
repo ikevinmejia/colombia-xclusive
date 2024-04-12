@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import 'swiper/css';
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -41,28 +42,26 @@ const imgData = [
     },
 ]
 
-
 const HomeSwiper = () => {
   return (
     <Swiper
     slidesPerView={5}
-    spaceBetween={30}
     autoplay={{
       delay: 4000,
       disableOnInteraction: false,
     }}
     loop={true}
-    className="mySwiper"
     modules={[Autoplay]}
+    className="mySwiper"
+    wrapperClass="items-center mx-auto gap-10 mt-10 "
   >
     {
         imgData.map(img => (
-            <SwiperSlide key={img.id}>
+            <SwiperSlide key={img.id} className="flex justify-center items-center">
                 <Image src={img.image} alt={img.image} width={200} height={200} />
             </SwiperSlide>
         ))
     }
-
   </Swiper>
   )
 }

@@ -16,3 +16,18 @@
   }
 } */
 
+@layer {
+  body::-webkit-scrollbar {
+    width: 8px;
+    height: 100%;
+    background: theme(colors.transparent);
+  }
+  body::-webkit-scrollbar-thumb {
+    background: theme(colors.primary-300);
+    border-radius: theme(borderRadius.md);
+  }
+  body::-webkit-scrollbar-track{
+    background: theme(colors.transparent);
+  }
+
+}
