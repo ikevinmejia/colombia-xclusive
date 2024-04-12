@@ -1,4 +1,5 @@
-import { videoData } from '@/data/video/videoData'
+
+import { videoData } from '@/data/home/video/videoData'
 import { Suspense } from 'react'
 
 const VideoComponent = () => {
