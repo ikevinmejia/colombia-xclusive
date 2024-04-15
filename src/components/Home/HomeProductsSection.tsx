@@ -1,3 +1,4 @@
+'use client'
 import { homeProductsImage } from "@/data/home/img/homeImageLocalPaths"
 import { Card, CardHeader, Image } from "@nextui-org/react"
 import NextImage from "next/image"
@@ -15,13 +16,14 @@ const HomeProductsSection = () => {
                 </CardHeader>
                 <Image
                     as={NextImage}
+                    src={product.image}
                     removeWrapper
                     alt="Relaxing app background"
                     width={600}
                     height={600}
                     quality={100}
-                    className="z-0 w-full h-full object-cover"
-                    src={product.image}
+                    className="z-0 w-full h-full object-cover transition-opacity opacity-0 duration-250"
+                    onLoadingComplete={(image:HTMLImageElement) => image.classList.remove('opacity-0')}
                 />
                 </Card>
             ))

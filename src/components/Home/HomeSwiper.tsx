@@ -10,6 +10,7 @@ interface Props {
 }
 
 const HomeSwiper = ({images}:Props) => {
+
   return (
     <Swiper
     slidesPerView={5}
@@ -25,7 +26,14 @@ const HomeSwiper = ({images}:Props) => {
     {
         images.map(img => (
             <SwiperSlide key={img.id} className="flex justify-center items-center">
-                <Image src={img.image} alt={img.image} width={200} height={200} />
+                <Image
+                    src={img.image}
+                    alt={img.image}
+                    width={200}
+                    height={200}
+                    className="transition-opacity opacity-0 duration-250"
+                    onLoadingComplete={(image) => image.classList.remove('opacity-0')}
+                />
             </SwiperSlide>
         ))
     }

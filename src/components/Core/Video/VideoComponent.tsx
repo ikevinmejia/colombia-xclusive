@@ -1,5 +1,6 @@
 
 import { Suspense } from 'react'
+import Overlay from '../Overlay/Overlay'
 
 interface Props {
     video: string,
@@ -7,7 +8,7 @@ interface Props {
 
 const VideoComponent = ({video}:Props) => {
   return (
-    <Suspense fallback='cargando...'>
+    <Suspense fallback={<Overlay/>}>
         <video src={video} autoPlay muted loop playsInline className='w-full h-full object-cover' >
         {/* <source src={video} type="video/mp4" />
         <track
