@@ -4,11 +4,11 @@ import { IoLogoInstagram, IoLogoWhatsapp } from 'react-icons/io'
 import { IoCalendar, IoLocation, IoMail } from 'react-icons/io5'
 
 const Footer = () => {
+    const year = new Date().getFullYear();
   return (
-    <footer className='w-full flex justify-between py-4'>
-
+    <footer className='w-full flex flex-col flex-wrap justify-between pt-4 border-t-[20px] border-t-primary'>
         {/* columnas de información */}
-        <section className='w-full mx-auto flex justify-evenly'>
+        <section className='w-11/12 sm:w-full mx-auto flex flex-col sm:flex-row justify-evenly gap-5'>
         <div className='flex flex-col gap-3'>
                 <h3 className='font-semibold'>Contact us</h3>
                 <ul className='flex flex-col gap-2'>
@@ -31,6 +31,10 @@ const Footer = () => {
                     <IoLogoInstagram size={28} />
                 </Button>
             </div>
+        </section>
+
+        <section className='mt-4 bg-slate-700 py-4'>
+            <p className='text-center text-white'>All rights reserved {year}</p>
         </section>
 
     </footer>
