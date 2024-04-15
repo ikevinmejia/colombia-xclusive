@@ -7,7 +7,7 @@ import Overlay from "../Core/Overlay/Overlay";
 
 const WelcomeSection = () => {
   return (
-    <section className="w-full h-full relative">
+    <section className="w-full h-dvh relative">
     <Overlay/>
     <VideoComponent video={videoData.welcomeHomeVideo}/>
     <div className="absolute w-full h-full top-0 gap-4 mx-auto flex flex-col justify-center items-center text-white">

@@ -6,7 +6,7 @@ import VideoComponent from '../Core/Video/VideoComponent'
 
 const BarberHomeSection = () => {
   return (
-    <section className="w-full h-full relative">
+    <section className="w-full h-dvh relative">
     <VideoComponent video={videoData.barberoMillonarioVideo}/>
     <div className="absolute w-full h-full top-0 gap-4 mx-auto flex flex-col justify-center items-center text-white">
         <Image
