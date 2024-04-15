@@ -19,7 +19,7 @@ const Navbar = () => {
             className="sm:hidden"
             />
             <NavbarBrand className="w-full h-full">
-                <Link href={'/'} className="h-full overflow-hidden" >
+                <Link href={'/home'} className="h-full overflow-hidden" >
                     <Image src={logo} alt={"colombiaXclusive logo"} className="w-full h-full" />
                 </Link>
             </NavbarBrand>

@@ -1,12 +1,15 @@
 
-import { videoData } from '@/data/home/video/videoData'
 import { Suspense } from 'react'
 
-const VideoComponent = () => {
+interface Props {
+    video: string,
+}
+
+const VideoComponent = ({video}:Props) => {
   return (
     <Suspense fallback='cargando...'>
         <video autoPlay muted loop className='w-full h-full object-cover' >
-        <source src={videoData.welcomeHomeVideo} type="video/mp4" />
+        <source src={video} type="video/mp4" />
         <track
             src="/path/to/captions.vtt"
             kind="subtitles"

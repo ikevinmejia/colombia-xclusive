@@ -17,6 +17,8 @@ const config: Config = {
       },
       backgroundImage: {
         "colombiaExperiencieVIPWay": `url('/img/screens/home/home-experience-description.jpg')`,
+        "colombiaStartYourXperience": `url('/img/screens/home/colombia-start-your-xperience.jpeg')`,
+        "gradient": `url('/img/screens/home/gradient.svg')`,
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

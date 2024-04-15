@@ -6,7 +6,7 @@ import MenuItem from "./MenuItem";
 const menuItems = [
     {
         title: 'Home',
-        path: '/'
+        path: '/home'
     },
     {
         title: 'Experiences',

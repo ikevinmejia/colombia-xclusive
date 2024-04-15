@@ -1,12 +1,5 @@
-import ExperienceSection from "@/components/Home/ExperienceSection";
-import WelcomSection from "@/components/Home/WelcomSection";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-
-  return (
-    <main className=" w-full h-dvh">
-        <WelcomSection/>
-        <ExperienceSection/>
-    </main>
-  );
+export default function RootPage() {
+    redirect('/home')
 }

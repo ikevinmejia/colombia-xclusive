@@ -1,13 +1,11 @@
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
-import Overlay from "../Core/Overlay/Overlay";
 
 const ExperienceSection = () => {
     return (
-        <section className="w-full h-dvh bg-colombiaExperiencieVIPWay relative ">
-            <Overlay />
-            <div className="absolute  w-full h-full top-0 mx-auto flex flex-col justify-center items-center">
-                <div className="w-8/12 mx-auto flex flex-col justify-start items-start gap-4 text-white">
+        <section className="w-full min-h-dvh max-h-max bg-colombiaExperiencieVIPWay bg-no-repeat">
+            <div className="w-full min-h-dvh max-h-max mx-auto py-8 lg:py-0 flex flex-col justify-center items-center bg-black bg-opacity-55">
+                <div className="w-11/12 sm:w-8/12 mx-auto flex flex-col justify-start items-start gap-4 text-white">
                     <h2 className="text-5xl md:text-8xl font-bold text-left">
                         EXPERIENCE COLOMBIA,
                         <br />

@@ -1,9 +1,14 @@
-import { Button, Link } from '@nextui-org/react'
+import { Button, ButtonProps, Link } from '@nextui-org/react'
 
-const ButtonCallToAction = () => {
+interface Props extends ButtonProps {
+    href: string,
+    label: string,
+}
+
+const ButtonCallToAction = ({href, label, ...buttonProps}:Props) => {
   return (
-    <Button as={Link}  href="https://wa.me/573009891646" color="primary" target="_blank" >
-         BOOK YOUR TRIP
+    <Button as={Link}  href={href} color="primary" target="_blank" {...buttonProps} >
+        {label}
     </Button>
   )
 }

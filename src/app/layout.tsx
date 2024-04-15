@@ -1,3 +1,4 @@
+import Footer from "@/components/Core/Footer/Footer";
 import Navbar from "@/components/Core/NavBar/Navbar";
 import Providers from "@/components/Providers/Providers";
 import type { Metadata } from "next";
@@ -15,10 +16,11 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={`${poppins.className}`}>
         <Providers>
-        <Navbar/>
-          {children}
+          <Navbar/>
+            {children}
+          <Footer/>
         </Providers>
       </body>
     </html>
