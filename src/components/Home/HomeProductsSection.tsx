@@ -1,7 +1,6 @@
 'use client'
 import { homeProductsImage } from "@/data/home/img/homeImageLocalPaths"
-import { Card, CardHeader, Image } from "@nextui-org/react"
-import NextImage from "next/image"
+import HomeProductCard from "../Core/Card/HomeProductCard"
 
 const HomeProductsSection = () => {
   return (
@@ -10,22 +9,7 @@ const HomeProductsSection = () => {
         <div className="h-full w-11/12 mx-auto grid grid-cols-6 gap-5 justify-center items-center">
         {
             homeProductsImage.map(product => (
-                <Card key={product.title} isFooterBlurred className="w-full h-80 sm:h-full col-span-6  sm:col-span-2 relative cursor-pointer hover:scale-105 hover:z-10">
-                <CardHeader className="w-full h-full absolute  flex justify-center items-center ">
-                    <h4 className="text-white/90 font-medium text-3xl text-center ">{product.title}</h4>
-                </CardHeader>
-                <Image
-                    as={NextImage}
-                    src={product.image}
-                    removeWrapper
-                    alt="Relaxing app background"
-                    width={600}
-                    height={600}
-                    quality={100}
-                    className="z-0 w-full h-full object-cover transition-opacity opacity-0 duration-250"
-                    onLoadingComplete={(image:HTMLImageElement) => image.classList.remove('opacity-0')}
-                />
-                </Card>
+                <HomeProductCard key={product.title} {...product}/>
             ))
         }
         </div>

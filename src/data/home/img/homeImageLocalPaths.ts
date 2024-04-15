@@ -1,3 +1,4 @@
+import { IImagesTitlePath } from "@/interfaces/global/imagesTitlePath";
 
 export const homeImageLocalPaths = {
     imgExperienceColombiaTheVipWay: '/img/screens/home/home-experience-description.jpg',
@@ -41,30 +42,36 @@ export const welcomeInitialHomePartners = [
     },
 ]
 
-export const homeProductsImage= [
+export const homeProductsImage:IImagesTitlePath[] = [
     {
         title: 'PRIVATE HOMES',
         image: '/img/products/private-homes.png',
+        path: '/',
     },
     {
         title: 'EXPERIENCES',
         image: '/img/products/experiencies.png',
+        path: '/',
     },
     {
         title: 'VIP CAR FLEET',
         image: '/img/products/vip-cars.png',
+        path: '/',
     },
     {
         title: 'PRIVATE CHEF',
         image: '/img/products/private-chef.png',
+        path: '/',
     },
     {
         title: 'YACHTS & BOATS',
         image: '/img/products/yacth-boats.png',
+        path: '/',
     },
     {
         title: 'VIP BARBER',
         image: '/img/products/vip-barber.png',
+        path: '/',
     },
 ];
 

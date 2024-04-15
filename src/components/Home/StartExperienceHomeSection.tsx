@@ -10,7 +10,7 @@ const StartExperienceHomeSection = () => {
             <h2 className="text-5xl md:text-8xl font-bold text-left">
             START YOUR XPERIENCE IN COLOMBIA!
             </h2>
-            <p className="max-w-5xl">
+            <p className="max-w-5xl text-xl">
             Come and explore Colombia with us! We take care of all the planning, reservations, experiences, tours, food, partying, and more! Everything is catered to your preferences, and your security is our top priority! There&apos;s a reason why so many VIPs only work with us! Reserve your experience today
             </p>
             <ButtonCallToAction href="https://wa.me/573009891646" label='CONTACT US' variant='bordered' className='text-white' />

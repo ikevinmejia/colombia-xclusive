@@ -11,7 +11,7 @@ const ExperienceSection = () => {
                         <br />
                         THE VIP WAY
                     </h2>
-                    <p className="max-w-5xl">
+                    <p className="max-w-5xl text-xl">
                         At ColombiaXclusive, we specialize in providing
                         VIP-level experiences that will leave you feeling like a
                         superstar. We are an all-inclusive concierge company
@@ -22,7 +22,7 @@ const ExperienceSection = () => {
                         vibrant city life of Medellin, and the wild jungles of
                         the Amazon.
                     </p>
-                    <p className="max-w-5xl">
+                    <p className="max-w-5xl text-xl">
                         With an extensive network of private homes, boats,
                         experiences, private chefs, restaurants, & much more-
                         you can arrive in Colombia with style, and a booked
@@ -30,7 +30,7 @@ const ExperienceSection = () => {
                         times, and our hosts will make your trip as fun as
                         possible!
                     </p>
-                    <p className="max-w-5xl">
+                    <p className="max-w-5xl text-xl">
                         We cater to a variety of clientele; for private groups
                         between 1-12 people, we host you in top class
                         accommodations and offer a multitude of different
